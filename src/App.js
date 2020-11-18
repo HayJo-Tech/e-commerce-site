@@ -1,19 +1,27 @@
+import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import Cart from "./components/Cart";
+import Default from "./components/Default";
+import Details from "./components/Details";
+import Product from "./components/Product";
+import ProductList from "./components/ProductList";
 
-function App() {
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">column number one</div>
-        <div className="col-6">
-          <span>
-          <i className="fas fa-shopping-cart"></i>
-          </span>
-        </div>
-      </div>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <ProductList />
+        <Product />
+        <Cart />
+        <Details />
+        <Default />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
