@@ -3,11 +3,12 @@ import {Switch, Route} from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
 import Details from "./components/Details";
 import ProductList from "./components/ProductList";
-
+import Title from "./components/Title";
+import CartColumns from './components/Cart/CartColumns';
 
 class App extends Component {
   render() {
