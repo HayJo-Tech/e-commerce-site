@@ -6,12 +6,12 @@ import Dropdown from "react-bootstrap/Dropdown";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/iconfinder_Credit_Card_2921795.png";
-// import styled from "styled-components";
+import styled from "styled-components";
 
 class MyNavbar extends Component {
   render() {
     return (
-      <Navbar fixed="top" bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark">
         <Link to="/">
           {/* //   https://www.iconfinder.com/icons/2921795/banking_business_credit_card_e-commerce_payment_purchase_transaction_icon */}
           <img src={logo} alt="store" className="navbar-brand"></img>
@@ -30,9 +30,9 @@ class MyNavbar extends Component {
           </Link> */}
         </Nav>
         <Nav>
-        <Nav.Link inline to="/cart" className="nav-link">
+        <Link inline to="/cart" className="nav-link">
         Cart 0
-      </Nav.Link>
+      </Link>
       </Nav>
       </Navbar>
     );
