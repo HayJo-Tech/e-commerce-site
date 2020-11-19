@@ -7,7 +7,7 @@ class Cart extends Component {
   render () {
     return (
       <section>
-        <Title name='Your' title='Cart' />
+        <Title title='Shopping Cart' />
         <CartColumns />
         <EmptyCart />
       </section>
