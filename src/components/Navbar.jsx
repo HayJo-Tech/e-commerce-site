@@ -10,7 +10,7 @@ import logo from "../assets/icons/iconfinder_Credit_Card_2921795.png";
 class MyNavbar extends Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar fixed="top" bg="dark" variant="dark">
         <Link to="/">
           {/* //   https://www.iconfinder.com/icons/2921795/banking_business_credit_card_e-commerce_payment_purchase_transaction_icon */}
           <img src={logo} alt="store" className="navbar-brand"></img>
