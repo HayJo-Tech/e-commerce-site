@@ -7,7 +7,7 @@ import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Details from "./components/Details";
 import ProductList from "./components/ProductList";
-
+import Title from "./components/Title";
 
 class App extends Component {
   render() {
