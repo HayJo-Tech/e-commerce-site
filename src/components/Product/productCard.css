@@ -1,0 +1,25 @@
+
+.card {
+border: none;
+width: 300px;
+}
+
+.product-card-image {
+    width: 100%;
+}
+
+.product-card-name {
+    font-weight: 600;
+}
+
+.product-card-description {
+    font-weight: 400;
+}
+
+.product-card-price {
+    font-weight: 600;
+}
+
+.product-card-size {
+    font-weight: 600;
+}
