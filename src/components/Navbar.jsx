@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/iconfinder_Credit_Card_2921795.png";
+// import styled from "styled-components";
 
 class MyNavbar extends Component {
   render() {
@@ -17,14 +18,22 @@ class MyNavbar extends Component {
         </Link>
         <Navbar.Brand href="#home">HayJo Shop</Navbar.Brand>
         <Nav className="mr-auto">
-          <Link to="/" className="nav-link">
-            products
-          </Link>
+          <DropdownButton className="nav-link" id="dropdown-container" title="Collections">
+            <Dropdown.Item as="button">Spring Collection 2020</Dropdown.Item>
+            <Dropdown.Item as="button">Summer Collection 2020</Dropdown.Item>
+            <Dropdown.Item as="button">Fall Collection 2020</Dropdown.Item>
+            <Dropdown.Item as="button">Winter Collection 2020</Dropdown.Item>
+          </DropdownButton>
+
+          {/* <Link to="/" className="nav-link">
+            Collections
+          </Link> */}
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
-        </Form>
+        <Nav>
+        <Nav.Link inline to="/cart" className="nav-link">
+        Cart 0
+      </Nav.Link>
+      </Nav>
       </Navbar>
     );
   }
