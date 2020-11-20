@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/iconfinder_Credit_Card_2921795.png";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 class MyNavbar extends Component {
   render() {
