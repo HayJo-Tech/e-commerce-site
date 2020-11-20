@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
 import Details from "./components/Details";
-import ProductList from "./components/ProductList";
+import ProductList from "./components/Product/ProductList";
 import Title from "./components/Title";
 import CartColumns from './components/Cart/CartColumns';
 
