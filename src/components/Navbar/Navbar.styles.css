@@ -1,0 +1,10 @@
+#site-name {
+    font-family: 'DM Serif Display', serif;
+    color: var(--mainBlack);
+    font-size: 24px;
+}
+
+#dd-item{
+    font-family: 'Poppins', sans-serif;
+}
+
